@@ -1,0 +1,20 @@
+package J71;
+
+public class KontoParibas extends KontoBankowe{
+
+	
+		
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void printInfo() {
+		int promocjaParibas = 20;
+		System.out.print(nrKonta + " "+ saldo1+ " " + promocjaParibas);
+		
+	}
+
+}

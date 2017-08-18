@@ -1,0 +1,23 @@
+
+public class ComputerUpgrade {
+	<Computer> void addMemory(Computer computer, int additionalMemory)
+	{
+		computer.memory = computer.memory + additionalMemory;
+		}
+	 
+	 
+	 
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+    Computer comp1 = new Computer(); 
+    comp1.processor = "Intel i5"; 
+    comp1.memory = 8192; 
+    ComputerUpgrade upgrade = new ComputerUpgrade(); 
+    upgrade.addMemory(comp1, 4096); 
+    comp1.printInfo(); 
+} 
+} 
+	
+
+//}

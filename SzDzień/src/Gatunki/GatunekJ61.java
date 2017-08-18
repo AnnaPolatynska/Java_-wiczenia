@@ -1,0 +1,77 @@
+package Gatunki;
+
+
+	import java.util.ArrayList;
+
+	/*
+	 * Stwórz program Gatunki w którym bêdzie utworzonych kilka obiektów typu GatunekKlasa Gatunek powinna zawieraæ:
+	pola przechowuj¹ce: nazwê rodzaju
+	nazwê gatunkow¹
+	liczbê chromosomów
+	Opis metody:
+
+	podaj¹c¹ pe³n¹ nazwê (Rodzaj + gatunek)
+	podaj¹c¹ liczbê chromosomów
+
+	wypisuj¹c¹ wszystkie dane Gatunek o wartoœciach pól takich samych jak w
+	obiekcie, w którym zosta³a wywo³ana.
+	W programie powinny byæ u¿yte wszystkie metody
+	 */
+	//------------------------------------------------------------------S³awka   J61 --------------bez J62-----------nie ruszaæ
+	public class GatunekJ61 {
+		String nazwaGatunku, rodzaj;
+		int liczcbaChromosomow;
+		
+		static ArrayList<GatunekJ61> listaGatunkow = new ArrayList<>();
+		
+		public GatunekJ61(String nazwaGatunku, String rodzaj, int liczcbaChromosomow) {
+			super();
+			this.nazwaGatunku = nazwaGatunku;
+			this.rodzaj = rodzaj;
+			this.liczcbaChromosomow = liczcbaChromosomow;
+			listaGatunkow.add(this);
+		}
+		
+
+		public String printRodzajGatunek() {
+			return "rodzaj: " + this.rodzaj + " gatunek: " + this.nazwaGatunku;
+		}
+
+		public String printLiczbaChromosomów() {
+			return "liczba chromosomów: " + this.liczcbaChromosomow;
+		}
+		
+		public String printWszystkieDane() {
+			return  this.printRodzajGatunek() +"\n"+ this.printLiczbaChromosomów();
+		}
+		
+		public void wypiszGatunki() {
+			for(GatunekJ61 v : listaGatunkow) {
+				if(v.rodzaj.equals(this.rodzaj)){
+					System.out.println(v.printWszystkieDane()+"\n\n");
+				}
+			}
+		}
+
+		// metoda main
+		public static void main(String[] args) {
+			GatunekJ61 orzelBielik = new GatunekJ61("bielik", "orze³", 90);
+			GatunekJ61 orzelPrzedni = new GatunekJ61("przedni", "orze³", 91);
+			GatunekJ61 orzelBielik2 = new GatunekJ61("bielik2", "orze³ffff", 92);
+			GatunekJ61 orzelBielik3 = new GatunekJ61("bielik3", "orze³", 90);
+			GatunekJ61 kot = new GatunekJ61("kot", "europejska", 90);
+			
+			
+			orzelPrzedni.wypiszGatunki();
+		//	===============================================================potrzebane do Specyfikatora=========================
+					
+					
+					
+					
+					
+		}
+		
+
+	}
+
+

@@ -1,0 +1,53 @@
+package Sekwencje;
+
+import java.util.ArrayList;
+
+public class listy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//zaimportuj bibliotekê
+		
+		ArrayList<String> lista = new ArrayList<String>(); 
+		lista.add("Ala"); //0indeks
+		lista.add("Ola");
+		lista.add("Ala");//2 indeks
+		
+		System.out.println(lista.get(2)); //get przyjmuje indeks 
+		
+		System.out.println(lista);//wypisuje listê bez formatowania
+		
+		for(String s: lista){
+			System.out.println(s +" ");
+		}
+		System.out.println("\n wielkoœæ listy: " + lista.size());
+		
+		lista.remove(1); //usuniêcie Oli
+		System.out.println(lista);
+		
+		lista.remove("Ala"); //usunie Alê z 1 znalezionego miejsca indeksy siê przesuwaj¹
+		System.out.println(lista);
+		
+		lista.add(0, "Iza"); //wstawi izê po oli
+		System.out.println(lista);
+		
+		
+		lista.set(0, "Ela"); //zamiana izê 2 na Elê
+		System.out.println(lista);
+	
+		
+		ArrayList<String> nowaLista = new ArrayList<String>(); 
+		nowaLista.add("1"); 
+		nowaLista.add("2"); 
+		nowaLista.add("3"); 
+		System.out.println(nowaLista.size()); 
+		System.out.println(nowaLista.get(1)); 
+		nowaLista.remove("2"); 
+		nowaLista.remove(1); 
+		System.out.print(nowaLista); 
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package J52;
+
+public class beep {
+  
+		 public void klakson() {   
+		  System.out.println(“Beeep”);       
+		 }  
+		public static void main(String argv[]) {  
+		 Auto dzwiek = new Auto();  
+		 dzwiek.klakso	public class Auto {n();  
+		 }  
+		} 
+}

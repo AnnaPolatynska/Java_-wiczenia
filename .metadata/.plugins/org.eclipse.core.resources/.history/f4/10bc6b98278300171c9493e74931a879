@@ -1,0 +1,55 @@
+package Sekwencje;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class J51_zakupy {
+	//J 51 ----------------------------------------------------------------------------------------------------wzór
+			/*Do poprzedniego æwiczenia dodaj funkcjonalnoœæ wykrywania tego ¿e produkt jest ju¿ w koszyku. 
+			* I zapytaj o potwierdzenie u¿ytkownika czy na pewno chce dodaæ ponownie ten produkt
+			*/
+				
+				Scanner pierwszy = new Scanner(System.in);
+				Scanner drugi = new Scanner(System.in);
+				HashMap<String, Double> mapa = new HashMap<String, Double>();
+				ArrayList<String> lista = new ArrayList<String>();
+				mapa.put("chleb", 1.23);
+				mapa.put("mleko", 2.99);
+				mapa.put("jaja", 3.99);
+				mapa.put("m¹ka", 2.20);
+				mapa.put("cukier", 3.69);
+				mapa.put("bu³ki", 0.99);
+				mapa.put("pomidory", 13.30);
+				mapa.put("woda", 1.99);
+				mapa.put("pomarañcze", 19.40);
+				mapa.put("ser", 21.90);
+				
+				float sum = 0;
+				System.out.println("Podaj nazwê produktu: ");
+				String produkty = pierwszy.nextLine();		// 1skaner
+				while( (!produkty.equals("end")) && (!produkty.equals("END")) ){
+					if(mapa.containsKey(produkty) && !lista.contains(produkty)){
+						sum += mapa.get(produkty);
+						lista.add(produkty);
+					} else if(mapa.containsKey(produkty) && lista.contains(produkty)){
+						System.out.println("Czy na pewno chcesz dodaæ ten produkt(t/n)?: "); //====== je¿eli 2X wpiszê jedno to pyta czy to pomy³ka
+						String xx = drugi.nextLine(); //2 skaner
+						if (xx.equals("t")){
+							sum += mapa.get(produkty);
+							lista.add(produkty);	
+						}
+					} else {
+						System.out.println("Z³a nazwa produktu: ");
+					}
+					produkty = pierwszy.nextLine();
+				}
+				System.out.println("Cena za twoje zakupy: " + sum + "z³");
+				pierwszy.close();
+				drugi.close();
+	
+	
+	
+	
+	
+}

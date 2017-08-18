@@ -1,0 +1,26 @@
+package db;
+import java.sql.*;
+
+public class DBConn {
+
+		final static String connectionURL = "jbc:mysql://localhost:3306/skoczkowie";
+		
+		final static String name = "root2";
+		final static String pass = "MySQL13";
+		
+		public static void main(String[] arg){
+			//rejestracja klasy sterownika
+		Class.forName("com.mysql.jdbc.Driver");
+			//utworzenie po³¹czenia
+		Connection con = DriverManager.getConnection(
+			//utworzenie wyra¿enie SQL
+		Statement stmt=con.createStatement();
+			//wykonanie zapytania		
+		ResultSetrs=stmt.executeQuery("select*from zawodnicy");
+		while(rs.next()){
+			System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3));
+				
+			} 
+		con.close();
+		}
+	}

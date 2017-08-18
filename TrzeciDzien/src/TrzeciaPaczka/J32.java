@@ -1,0 +1,32 @@
+package TrzeciaPaczka;
+import java.util.Scanner;
+public class J32 {
+//J32
+	/*Napisz program który pobiera od u¿ytkownika wiek i 
+	 * wyœwietla napis „Mo¿esz g³osowaæ!” lub „Nie mo¿esz g³osowaæ!” 
+	 * w zale¿noœci od jego wieku.*/
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// program sprawdzajacy czy mo¿na g³osowaæ w zale¿noœci od wpisanego wieku
+		
+		Scanner wiek = new Scanner(System.in);
+		System.out.println("Podaj wiek: ");
+		//String d = wiek.nextLine();
+		//W=18 ewentualna zmienna do podstawienia je¿eli wykorzytujemy j¹ czêsciej
+						
+		if (wiek.nextInt()>=18){
+			System.out.println("Mo¿esz g³osowaæ");
+		}
+		else{
+			System.out.println("Nie mo¿esz g³osowaæ");
+		}
+		System.out.println("koniec komunikatu");
+		
+		wiek.close();
+		
+		
+	}
+
+}

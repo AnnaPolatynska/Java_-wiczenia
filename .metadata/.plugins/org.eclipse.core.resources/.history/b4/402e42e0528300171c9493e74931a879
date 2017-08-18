@@ -1,0 +1,14 @@
+
+public class klakson {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		public void klakson1() {
+			System.out.println(“Beeep”);
+			}  
+	
+		
+		
+	}
+
+}

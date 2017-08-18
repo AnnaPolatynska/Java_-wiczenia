@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class próba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//int[] numbers = new int[10]; 
+		 
+		//for(int i=0; i<numbers.length; i++) { 
+		 //numbers[i] = i+1; 
+		    //  }  
+		 
+		/*for(int i=0; i<numbers.length; i++) { 
+			numbers[i] = i+1;
+			System.out.println("Liczba: " + numbers[i]); 
+		      } */
+		
+	/*int[] numbers = {3, 7, 4, 12};
+    
+	for(int tmp: numbers) { 
+	 System.out.println("dane: " + tmp); 
+	      } */
+	
+		
+		/*int[] tablica = new int[10]; //stworzenie tablicy 10 elementowej
+	 
+	for(int i=0; i<10; i++) //i ustawienia tablicy - ile razy ma wypisaæ wartoœci
+	 tablica[i] = i+2; //jakie wartoœci ma wypisaæ
+	 
+	for(int x : tablica) //x nazwa wartoœci
+	 System.out.println(x); */
+		
+		// -------------------------------nie zwraca liczb tylko wypisuje dan¹ iloœc razy 0
+		/*int[] numbers = new int[3]; 
+		Scanner sc = new Scanner(System.in); 
+		for(int tablica: numbers) { 
+		 System.out.println("Podaj liczbê"); 
+		       tablica = sc.nextInt(); 
+		} 
+		for(int tablica: numbers) { 
+		 System.out.println(tablica); 
+		} 
+		sc.close(); */
+		
+		
+		
+		int i = 1; 
+		while(i <= 5) { 
+		 System.out.println("Liczba "+i); 
+		      i++; 
+		      ++i; 
+		} 
+		
+		
+		
+		
+		
+	}
+	}
+
+

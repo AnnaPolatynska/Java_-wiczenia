@@ -1,0 +1,49 @@
+package J52;
+/*J52
+ * Napisz program, w którym utworzysz dwie klasy: 
+Employee - klasa, która bêdzie przedstawia³a pracownika dowolnej firmy. Podstawowe informacje o pracowniku jakie s¹ potrzebne pracodawcy 
+to imiê, nazwisko, rok urodzenia, sta¿ pracy 
+
+ Company - klasa, w której utworzysz 3 obiekty reprezentuj¹ce pracowników, a nastêpnie 
+wyœwietlisz informacjê o nich na ekranie 
+ * */
+import java.util.ArrayList;
+
+public class Company {
+
+	ArrayList<String> lista = new ArrayList<String>(); //obiekt
+	Company(ArrayList<String> lista){
+		this.lista = lista;
+	}
+	
+	//public void szefInfo(){ //wyœwietl pracowników = wartoœci employee s¹ wykorzystywane przez inny obiekt = metodê szefInfo
+	//	for (String prac:lista){
+	//		System.out.println(prac);
+	//	}
+	//}
+	
+	
+	public static void main(String[] args) {
+
+		ArrayList<String> pracownicy = new ArrayList<String>();//tworzê listê pracownicy
+		
+		Employee Pierwszy=new Employee("Jan", "Kowalski", "1985", 12);
+		pracownicy.add(Pierwszy.info());
+		Employee Drugi=new Employee("Anna", "Malinowska", "1973", 22);
+		pracownicy.add(Drugi.info());
+		Employee Trzeci=new Employee("Zygmunt", "Koz³owski", "1964", 35);
+		pracownicy.add(Trzeci.info());
+				
+		//System.out.println(Pierwszy.info());
+		//System.out.println(Drugi.info());
+		//System.out.println(Trzeci.info());
+		//wypisuje pracowników
+		
+		//z klasy company sprawdzenie ile jest obiektów -- zwraca str z danymi pracowników
+		
+	Company szef1 = new Company (pracownicy);
+	//	szef1.szefInfo();
+				
+	}
+}
+

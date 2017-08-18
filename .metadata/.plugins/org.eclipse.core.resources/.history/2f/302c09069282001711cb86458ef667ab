@@ -1,0 +1,80 @@
+package Tablice;
+import java.io.FilterInputStream;
+import java.util.Random;
+import java.util.Scanner;
+
+public class J43 {
+//J 43
+	/*
+	 * */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//losowe wartoœci dla -10 do 10
+		//wypisze zawartoœæ
+		//wyznaczy najmniejszy i najwiêkszy element tablicy
+		//wyznaczy œredni¹ artmentyczn¹
+		//ile elementów wiêkszych i mniejszych od sredniej
+		//zawartoœc tablicy w odwrotnej kolejnoœci
+		
+		
+		/////-----                                                       --------------------  -------------------ok wz M
+		
+		int [] randInt = new int[10];
+		Random generator = new Random();
+		//losowanie
+		for(int i = 0; i<randInt.length; i++){
+			randInt[i] = generator.nextInt(21)-10;
+		}
+		//wypisanie 
+		System.out.println("Losowanie ");
+		for(int i = 0; i<=randInt.length -1; i++){
+			System.out.print(randInt[i]);
+			System.out.print(" ");
+		}
+		// wypisanie odwrotne
+		System.out.println("Wypisane odwrotnie ");
+		for(int i = randInt.length -1; i>=0; i--){
+			System.out.print(randInt[i]);
+			System.out.print(" ");
+		}
+		// max i min
+		int tempMax = randInt[0];
+		int tempMin = randInt[0];
+		for(int i = 1; i<=randInt.length-1; i++){
+			if(tempMax < randInt[i]){
+				tempMax = randInt[i];
+			}
+			if(tempMin > randInt[i]){
+				tempMin = randInt[i];
+			}
+		}		
+		System.out.print("\nNajmniejszy: "+tempMin+" \nNajwiêkszy: "+tempMax);
+		//srednia
+		int sum = 0;
+		for (int i = 0; i<= randInt.length - 1; i++){
+			sum += randInt[i];
+		}
+		float ave=sum/randInt.length;
+		System.out.print("\nŒrednia arytmetyczna: "+ave);
+		//ile elementów jest > a ile mniejszych od sredniej
+		int licznikM = 0;
+		int licznikW = 0;
+		for(int i = 0; i<=randInt.length-1; i++){
+			if(randInt[i]>ave){
+				licznikW ++;
+			}
+			if(randInt[i]<ave){
+				licznikM ++;
+			}
+		}
+		System.out.print("\nLiczba elementów wiêkszych od œredniej: "+licznikW);
+		System.out.print("\nLiczba elementów mniejszych od œredniej: "+licznikM);
+		
+		
+		
+		
+	}
+
+}
+

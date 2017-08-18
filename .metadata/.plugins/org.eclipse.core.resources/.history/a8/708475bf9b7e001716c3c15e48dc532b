@@ -1,0 +1,19 @@
+package J72;
+
+public abstract class Organizam {
+
+	
+	String DNA;
+	
+	public abstract void info();
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+	}
+
+}

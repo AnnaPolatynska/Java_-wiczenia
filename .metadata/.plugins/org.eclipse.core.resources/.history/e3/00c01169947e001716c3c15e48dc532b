@@ -1,0 +1,21 @@
+package J71;
+
+import KlasaAbstrakcyjna.Owoce;
+
+public class KontoParibas extends KontoBankowe{
+
+	
+		
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void printInfo() {
+		System.out.print(nrKonta + " "+ saldo1+ " " + promocjaParibas);
+		
+	}
+
+}

@@ -1,0 +1,60 @@
+import java.io.FilterInputStream;
+import java.util.Random;
+import java.util.Scanner;
+//J28
+/*Napisz program, który wypisze 5 losowych wartoœci typu int na ekran i stosuj¹c instrukcje if-else dla 
+ * ka¿dej z tych wartoœci program sklasyfikuje wartoœæ jako (mniejsz¹, równ¹ lub wiêksz¹) od zadanej wartoœci przez u¿ytkownika. 
+ LOSOWE
+ */
+
+public class J28_losowo {
+	public static void main(String[] args ) {
+			Scanner costam = new Scanner(new FilterInputStream(System.in){
+			@Override
+			public void close(){}
+		});
+		
+		System.out.println("Podaj 1 liczbê: ");
+		double A = costam.nextDouble(); //nextDouble  czyta kolejn¹ liczbê zmiennoprzecinkow¹ //
+		
+	
+		Random gen= new Random(); //cnt+shift+o œci¹ga bibliotekê//
+		int X= gen.nextInt(3);
+		boolean result;
+	
+		System.out.println(X);
+		
+		if( X > A) { 
+			System.out.println("wiêksza od A"); 	
+		}
+		else if(X <A) { 
+				System.out.println("mniejsza od A "); 
+			}
+		
+			else{
+			System.out.println("równa A"); 
+			}
+		// pierwsze dzia³a //
+		
+		System.out.println("Podaj 2 liczbê: ");
+		double B = costam.nextDouble(); //nextDouble  czyta kolejn¹ liczbê zmiennoprzecinkow¹ //
+		int Y= gen.nextInt(3);
+		System.out.println(Y);
+		
+		if( Y > B) { 
+			System.out.println("wiêksza od B"); 	
+		}
+			else if(Y <A) { 
+				System.out.println("mniejsza od B "); 
+			}
+		
+			else{
+			System.out.println("równa B"); 
+		
+		
+		
+	}
+	}
+}
+			
+

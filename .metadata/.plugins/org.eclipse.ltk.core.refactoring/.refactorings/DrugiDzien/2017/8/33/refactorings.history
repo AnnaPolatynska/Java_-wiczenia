@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;J23wroryMat&apos; to &apos;J23zwroryMat&apos;&#x0D;&#x0A;- Original project: &apos;DrugiDzien&apos;&#x0D;&#x0A;- Original element: &apos;J23wroryMat&apos;&#x0D;&#x0A;- Renamed element: &apos;J23zwroryMat&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;J23wroryMat&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{J23wroryMat.java[J23wroryMat" matchStrategy="1" name="J23zwroryMat" qualified="false" references="true" similarDeclarations="false" stamp="1502808729814" textual="false" version="1.0"/>
+</session>

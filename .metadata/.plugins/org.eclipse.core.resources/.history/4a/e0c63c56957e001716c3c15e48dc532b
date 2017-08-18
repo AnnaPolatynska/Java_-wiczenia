@@ -1,0 +1,37 @@
+package J71;
+
+public abstract class KontoBankowe {
+
+	
+	int nrKonta;
+	int saldo1;
+	
+	public static final int addSaldo(){
+		int saldo2 = 1000;
+		return saldo2;
+		
+	};
+	
+	public static final void subbSaldo(){
+		
+	};
+	
+	public abstract void printInfo();	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+
+
+	}
+
+}

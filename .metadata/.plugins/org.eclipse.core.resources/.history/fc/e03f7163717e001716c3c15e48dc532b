@@ -1,0 +1,22 @@
+package dziedziczenie;
+
+public class GetSetPotmna extends GetSetBazowa {
+
+	public GetSetPotomna(String imie, int pesel);
+	super(imie, pesel);{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GetSetPotomna gs1= GetSetPotomna("Micha³", 2365488745);
+		System.out.print(gs1.getImie()+ " "+ gs1.getpesel());
+		//gs.1=imie ="abc"- nie widoczna z klasy potomnej
+				gs.1.setImie("Adam");
+				gs.1.setPesel(1);
+				System.out.print(gs1.getImie()+ " "+ gs1.getpesel());
+				
+				
+				
+	}
+}
