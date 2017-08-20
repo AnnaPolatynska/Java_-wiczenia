@@ -1,28 +1,25 @@
 package J68;
-
+/* Stwórz klasę Punkt2D, która przechowuje informacje na temat punktu na przestrzeni dwuwymiarowej (współrzędne x oraz y). 
+ * Zawierająca dwa konstruktory:   bezparametrowy ustawiający pola na wartość 0, oraz   przyjmujący dwa argumenty i 
+ * ustawiający pola obiektu zgodnie z podanymi parametrami.   Dodaj metody które pozwolą na przemieszczanie punktu w przestrzeni.  
+ Następnie napisz klasę Punkt3D dziedziczącą po Punkt2D, reprezentującą punkt w trójwymiarze (dodatkowe pole z).  
+ Przesłoń metody z punktu 2D tak żeby pasowały do punktu 3D 
+ */
 public class Punkt2D {
 	int x;
 	int y;
 	
-	
-	public Punkt2D() {
-		this.x = 0;
-		this.y = 0;
+	public void move(int a, int b){
+		this.x = x + a;
+		this.y = y + b;
 	}
-	public void move(int a, int b) {
-		super.move(a,b);
-		this.x = x+a;
-		this.y = y+b;
-		}
-	
-	System.out.println("aktualne po�o�enie: ")
+	public void print(){
+		System.out.println("Aktualne położenie: ["+ x +","+ y +"]");
+	}
+	public Punkt2D() {
+	}
 	public Punkt2D(int x, int y) {
 		this.x = x;
 		this.y = y;
-	
-		
 	}
-	
-	
-	
 }

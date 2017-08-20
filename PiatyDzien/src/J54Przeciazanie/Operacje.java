@@ -1,7 +1,12 @@
 package J54Przeciazanie;
-
+/* Napisz program sk³adaj¹cy siê z dwóch klas.  
+Pierwsza niech zawiera kilka metod o nazwie dodaj(), ale zwracaj¹cych ró¿ne typy wyników i przyjmuj¹cych po minimum dwa parametry 
+typów liczbowych wybranych przez Ciebie. Ich zadaniem jest zwrócenie, lub wyœwietlanie sumy podanych argumentów.  
+W drugiej klasie Testowej utwórz obiekt tej klasy i sprawdŸ dzia³anie swoich metod, wyœwietlaj¹c wyniki dzia³añ na ekranie.  
+Dodatkowo ka¿da z metod niech wyœwietla jaki zwraca typ i rodzaj argumentów które pobra³a, abyœ wiedzia³, która z nich zadzia³a³a.  
+*/
 public class Operacje {
-	
+	//---------------------------------------------------------OK	
 	public void printType(int a){
 		System.out.println("int");
 	}
@@ -33,61 +38,3 @@ public class Operacje {
 		return a - b - c;
 	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*public class Operacje {
-
-	
-	
-	//---------------------------------------------------------OK
-	
-	public double dodaj(double a, double b){
-		return(a+b);
-		}
-	public double dodaj(double a, double b, double c ){
-		return (a+b+c);
-		}
-	public int dodaj(int a, int b){
-		return (a+b);
-		}
-	public int dodaj(int a, int b, int c ){
-		return(a+b+c);
-		}
-	
-	
-	//---------------------------------------------------------------odejmowanie  OK
-	
-	public double odejmij(double a, double b){
-		return(a-b);
-		}
-	public double odejmij(double a, double b, double c ){
-		return (a-b-c);
-		}
-	public int odejmij(int a, int b){
-		return (a-b);
-		}
-	public int odejmij(int a, int b, int c ){
-		return(a-b-c);
-		}
-	
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	
-	}
-}
-*/

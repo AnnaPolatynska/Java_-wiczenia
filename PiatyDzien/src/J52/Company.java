@@ -16,7 +16,7 @@ public class Company {
 		this.lista = lista;
 	}
 	
-	public void szefInfo(){ //wyœwietl pracowników = wartoœci employee s¹ wykorzystywane przez inny obiekt = metodê szefInfo
+	public void szefInfo(){ //wyœwietl pracowników = wartoœci employee s¹ wykorzystywane przez inny obiekt = metodê szefInfo--------OK
 		for (String prac:lista){
 			System.out.println(prac);
 		}

@@ -1,10 +1,14 @@
 package J59;
-// -------------------------------------------------------------------------------------------------OK------------
+
+
+// J59-------------------------------------------------------------------------------------------------OK------------
 
 /*
-Napisz kasę zawierającą dwa pola: pierwsze typu double i drugie typu char.  
- Dopisz cztery przeciążone konstruktory:  pierwszy przyjmujący jeden argument typu double,  
-drugi przyjmujący jeden argument typu char,  trzeci przyjmujący dwa argumenty – pierwszy typu double i drugi typu char  
+ Napisz kasę zawierającą dwa pola: pierwsze typu double i drugie typu char.  
+ Dopisz cztery przeciążone konstruktory:  
+ pierwszy przyjmujący jeden argument typu double,  
+ drugi przyjmujący jeden argument typu char,  
+ trzeci przyjmujący dwa argumenty – pierwszy typu double i drugi typu char  
  czwarty przyjmujący również dwa argumenty, ale w odwrotnej kolejności. 
  */
 import PrzeciazanieMetod.Przeciazanie;

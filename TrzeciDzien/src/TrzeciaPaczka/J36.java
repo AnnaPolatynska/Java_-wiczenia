@@ -10,53 +10,22 @@ public class J36 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	//----------------------------------------------------wzór M------ zapêtla i nie liczy
-		/*	Scanner rl = new Scanner(System.in);
-			System.out.println("Podaj wszystkie liczby: ");
-			int line = 0;
-			int sum = 0;
-			boolean hasZERO = false;
-			do{ 
-				line = rl.nextInt();
-				if(line != 0 ){
-					sum+=line;
-				} else{
-					hasZERO = true;
-				}
-			} while(!hasZERO);
-				System.out.println("Suma = " +sum);
-				rl.close();
-		
-		
-		
-		//// -----------------------------------------------------------------------------czegoœ brak zapêtla
-		
+	//zlicza a¿ trafi na 0----------------------------------------------------OK
 		Scanner rl = new Scanner(System.in);
-		
-		System.out.println("Podaj liczbê ca³kowit¹: ");		
-		int liczba = rl.nextInt();
-		int sum=0;
-							
-		for (int i=1; i <= liczba; i++){
-			sum+=i;
-		}	
-		while(liczba !=0){
-				
-		System.out.println(sum);
-		rl.close();
+		System.out.println("Podaj wszystki liczby: ");
+		int line = 0;
+		int sum = 0;
+		boolean hasZERO = false;
+		do{ 
+			line = rl.nextInt();
+			if(line != 0 ){
+				sum+=line;
+			} 
+			else{
+				hasZERO = true;
 		}
-		*/	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		} while(!hasZERO);
+			System.out.println("Suma = " +sum);
+			rl.close();		
 	}
 }

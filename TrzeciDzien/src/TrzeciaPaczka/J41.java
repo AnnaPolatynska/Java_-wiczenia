@@ -6,28 +6,24 @@ public class J41 {
 //J41
 	/* Napisz program, dla podanej liczby ca³kowitej wyœwietla jej dzielniki. 
 	 * Przyk³adowo, dla liczby 21 dzielniki to: 1, 3, 7, 21. */
-	//-------------------------------------------------------------------------------nie podaje liczników a wszystkie
+	//-------------------------------------------------------------------------------ok
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner rl = new Scanner(System.in);
-		System.out.println("Podaj liczbê ca³kowit¹ A wiêksz¹ od zera: ");
+		System.out.println("Podaj jak¹ liczbe ca³kowit¹ wiêksz¹ od zera");
 		int liczba = rl.nextInt();
-		System.out.println("liczba" + liczba + "jest podzielna przez: ");
+		System.out.println("Liczba " + liczba + " jest podzielna przez: ");
 		if(liczba >0){
-			for (int i =1; i<liczba+1; i++){
-				if(liczba %1 ==0){
+			for (int i = 1; i<liczba+1; i++){
+				if(liczba %i == 0){
 					System.out.println(i);
 				}
 			}
-		}else{
-			System.out.println("Liczba mniejsza od zera");
+		} else {
+		System.out.println("Liczba mniejsza od zera");
 		}
-		
-							
-		rl.close();
-		
-		
+	rl.close();
 	}
 
 }

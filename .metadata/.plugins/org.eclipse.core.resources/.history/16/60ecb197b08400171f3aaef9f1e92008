@@ -1,0 +1,61 @@
+package TrzeciaPaczka;
+
+import java.util.Scanner;
+//J36
+/*Napisz program, który wczyta liczby podane przez u¿ytkownika dot¹d, dopóki nie wykryta zostanie liczba 0.  
+ * Nastêpnie wyœwietliæ sumê wszystkich podanych liczb. */
+
+public class J36 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	//----------------------------------------------------wzór M------ zapêtla i nie liczy
+			Scanner rl = new Scanner(System.in);
+			System.out.println("Podaj wszystki liczby: ");
+			int line = 0;
+			int sum = 0;
+			boolean hasZERO = false;
+			do{ 
+				line = rl.nextInt();
+				if(line != 0 ){
+					sum+=line;
+				} else{
+					hasZERO = true;
+				}
+			} while(!hasZERO);
+				System.out.println("Suma = " +sum);
+				rl.close();
+		
+		
+		//// -----------------------------------------------------------------------------czegoœ brak zapêtla
+		
+		/*Scanner rl = new Scanner(System.in);
+		
+		System.out.println("Podaj liczbê ca³kowit¹: ");		
+		int liczba = rl.nextInt();
+		int sum=0;
+							
+		for (int i=1; i <= liczba; i++){
+			sum+=i;
+		}	
+		while(liczba !=0){
+				
+		System.out.println(sum);
+		rl.close();
+		}
+		*/	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

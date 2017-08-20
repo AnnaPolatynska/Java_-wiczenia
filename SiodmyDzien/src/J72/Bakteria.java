@@ -1,6 +1,11 @@
 package J72;
-
-public class Bakteria extends Organizam{
+/*Stwórz klasê Organizm zawieraj¹c¹ dowolne pola i metody, które mo¿na by przypisaæ wersji dowolnego organizmu. 
+ * 
+ * 
+ * 
+ * Nastêpnie stwórz klasy Bakteria , Roœlina oraz Zwierzê dziedzicz¹ce cechy po klasie Organizm ale tak¿e dostosowuj¹c je 
+ * do charakterystyki tych grup organizmów. */
+public class Bakteria extends Organizm{
 
 static String szkodliwosc;
 

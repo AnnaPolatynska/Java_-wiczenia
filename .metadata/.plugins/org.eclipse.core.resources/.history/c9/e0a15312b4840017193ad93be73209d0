@@ -1,0 +1,32 @@
+package J54Przeciazanie;
+/* Napisz program sk³adaj¹cy siê z dwóch klas.  
+ Pierwsza niech zawiera kilka metod o nazwie dodaj(), ale zwracaj¹cych ró¿ne typy wyników i przyjmuj¹cych po minimum dwa parametry 
+ typów liczbowych wybranych przez Ciebie. Ich zadaniem jest zwrócenie, lub wyœwietlanie sumy podanych argumentów.  
+ W drugiej klasie Testowej utwórz obiekt tej klasy i sprawdŸ dzia³anie swoich metod, wyœwietlaj¹c wyniki dzia³añ na ekranie.  
+ Dodatkowo ka¿da z metod niech wyœwietla jaki zwraca typ i rodzaj argumentów które pobra³a, abyœ wiedzia³, która z nich zadzia³a³a.  
+*/
+
+		
+		public class Test {
+			public static void main(String[] args) {
+				Operacje o1 = new Operacje();
+				System.out.println(o1.dodaj(2,3));
+				System.out.println(o1.dodaj(2,3,4));
+				System.out.println(o1.dodaj(2.23,3.32));
+				System.out.println(o1.dodaj(2.24,3.32,3.21));
+				
+				System.out.println(o1.odejmij(2,3));
+				System.out.println(o1.odejmij(2,3,4));
+				System.out.println(o1.odejmij(2.23,3.32));
+				System.out.println(o1.odejmij(2.24,3.32,3.21));
+				
+				o1.printType(o1.dodaj(2,3));
+				o1.printType(o1.dodaj(2.23,3.32));
+				o1.printType(o1.odejmij(2.23,3.32));
+				o1.printType(o1.odejmij(2.24,3.32,3.21));
+		
+		
+		
+	}
+
+}

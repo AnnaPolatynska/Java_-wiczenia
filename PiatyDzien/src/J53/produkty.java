@@ -6,8 +6,6 @@ package J53;
 * Suma któr¹ trzeba zap³aciæ.  
  */
 
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -34,29 +32,5 @@ public class produkty {
 		System.out.println("Cena za twoje zakupy: " + sum + "z³");
 		rl.close();
 		return sum;
-		
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		
-		
-			
-		
-		
-		
-		
-		
-		
 	}
-
 }

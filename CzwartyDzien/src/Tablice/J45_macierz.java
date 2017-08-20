@@ -14,7 +14,7 @@ public class J45_macierz {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//// ------------------------------------------------- macierze od -5 do 5 --wzór
+		//// ------------------------------------------------- macierze od -5 do 5 --wzór  ok
 		int[][] tabl = new int[5][5]; //macierz[][]
 		//generowanie
 		Random generator = new Random();

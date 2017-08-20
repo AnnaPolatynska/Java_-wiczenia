@@ -1,30 +1,24 @@
 package J68;
-
+/* Stwórz klasę Punkt2D, która przechowuje informacje na temat punktu na przestrzeni dwuwymiarowej (współrzędne x oraz y). 
+ * Zawierająca dwa konstruktory:   bezparametrowy ustawiający pola na wartość 0, oraz   przyjmujący dwa argumenty i 
+ * ustawiający pola obiektu zgodnie z podanymi parametrami.   Dodaj metody które pozwolą na przemieszczanie punktu w przestrzeni.  
+ Następnie napisz klasę Punkt3D dziedziczącą po Punkt2D, reprezentującą punkt w trójwymiarze (dodatkowe pole z).  
+ Przesłoń metody z punktu 2D tak żeby pasowały do punktu 3D 
+ */
 public class Punkt3D extends Punkt2D{
-	int z;
-
-	public void move(int a, int b, int c){
-		super.move(a,b);//wywo�anie metody z klasy nadrz�dnej
-		this.z = z+c;
-		}
-	
-	public void print(){
-		System.out.println("aktualne po�o�enie"+ x +" " +y + " "+z);
-	
-
-	public Punkt3D(int x, int y,int z){
-		super(x,y); //wywo�anie metody z klasy nadrz�dnej
-		this.z = z;
-	
-	
-	}
-	
-	
-	
-	}
-
-	private void Punkt3D(int x, int y, int z2) {
-		// TODO Auto-generated method stub
+		int z;
 		
-	}
+		public void move(int a, int b, int c){
+			super.move(a, b);		// wywołanie metody z klasy nadrzędnej
+			this.z = z + c;
+		}
+		public void print(){
+			System.out.println("Aktualne położenie: ["+x+","+y+","+z+"]");
+		}
+		public Punkt3D() {
+		}
+		public Punkt3D(int x, int y, int z) {
+			super(x,y);				// wywołanie konstruktora klasy nadrzędnej
+			this.z = z;
+	}		
 }

@@ -1,31 +1,23 @@
 package J71;
+/*Stwórz klasê KontoBankowe która bêdzie reprezentowa³a wirtualn¹ reprezentacje konta bankowego. Przynajmniej nrKonta i saldo; 
+ * W klasie konto bankowe stwórz metody addSaldo, subbSaldo oraz przynajmniej dwie metody abstrakcyjne: interest, addDebit  
+ * Nastêpnie stwórz klasê KontoBank1 i KontoBank2 która bêdzie rozszerzaæ klasê KontoBankowe.  
+ * Zaimplementuj wszystkie abstrakcyjne metody. 
+ *  Przetestuj dzia³anie kont bankowych, dane maj¹ byæ wprowadzanie przez u¿ytkownika.  
+*/
 
-public abstract class KontoBankowe {
-
-	
-	int nrKonta;
-	int saldo1;
-	
-	public float addSaldo(int kwota){
-		return this.saldo1=saldo1 +kwota;
-			};
-	public float subSaldo(int kwota){
-		return this.saldo1=saldo1 -kwota;
-	}
-	
-	public void addDebit(){
+	public abstract class KontoBankowe {
+		int nrKonta;
+		float saldo;
 		
-	};
-	
-	public abstract void printInfo();	
-	
-	
-	
+		public float addSaldo(float kwota){
+			return this.saldo = saldo + kwota;
+		}
+		public float subSaldo(float kwota){
+			return this.saldo = saldo - kwota;
+		}
+		abstract void addDebit();
+		abstract void intrest(int nrKonta,float saldo);
 		
-	public static void main(String[] args) {
-
-
-
 	}
 
-}

@@ -1,0 +1,44 @@
+package J65;
+/*J65
+ * Getter i Setter 
+ Napisz program który bêdzie imitowa³ magazyn.  Z wykorzystaniem obiektowoœci.  
+ Menu wyboru co chcemy zrobiæ w programie: 
+ przyjmowaæ / wydawaæ produkty z magazynu 
+ Dodawaæ produkty i ich ceny 
+ Kasowaæ produkty 
+ Sprawdzaæ stany magazynowe produktów.  
+ Pokazywaæ ceny produktów 
+ Przy pokazywaniu ceny produktu nale¿y uwzglêdniæ ró¿ne stawki vat które mog¹ byæ okreœlane przez u¿ytkownika.  
+ 
+*/
+import java.util.Scanner;
+
+import J65A.MagazynA;
+
+public class Produkty {
+	
+	public static void main(String[] args) {
+		Magazyn m1 = new Magazyn();
+		Scanner menu = new Scanner(System.in);
+		
+		while(true){
+			System.out.println("Co chesz zrobiæ: D-dodaj, U-usuñ, L-lista, Q-wyjœcie");
+			String m = menu.nextLine();
+			if(m.equals("D")){
+				m1.dodajProdukt(new Magazyn());
+			} 
+			if (m.equals("L")){
+				m1.stanyProdukty();
+			}
+			if (m.equals("U")){
+				m1.usunProdukt(new Magazyn());
+			}
+			if (m.equals("Q")){
+				System.out.println("koniec!");
+				break;
+			}
+		}
+		menu.close();
+	}
+
+}

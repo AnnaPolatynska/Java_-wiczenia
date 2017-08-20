@@ -18,7 +18,7 @@ public class Przeciazanie {
 		this.imie2 = imie2;
 		this.nazwisko = nazwisko;
 	}
-// przeci¹¿anie przez zmienn¹ liczbê parametrów lub rzez zmianê typu parametrów
+// przeci¹¿anie przez zmienn¹ liczbê parametrów lub pzez zmianê typu parametrów
 	public Przeciazanie(String imie, String nazwisko) {
 		super();
 		this.imie = imie;

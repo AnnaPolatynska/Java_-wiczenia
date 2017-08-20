@@ -1,21 +1,15 @@
 package KlasaAbstrakcyjna;
 
-public abstract class Owoce {
-	//sta³a
-	public static final String owoce="owoce";
-	
-	public static final String odmiana= "odmiana";
-	
-	
-	//zmienna
+public abstract class Owoce implements PraOwoc {
+	// sta³a
+	public static final String owoce = "owoc";
+	// zmienna
 	public boolean dojrzaly;
-	
-	//metoda abstrakcyjna
+	// metada abstrakcyjna
 	public abstract void printInfo();
-	
-	//metoda
+	// metoda
 	public void dojrzewanie(){
-		this.dojrzaly=true;
+		this.dojrzaly = true; 
 	}
 	
 }

@@ -1,28 +1,27 @@
 package KlasaAbstrakcyjna;
 
 public class Jablka extends Owoce{
-
+	String odmiana ="nieznana";
 	
-	
-	public void printInfo(){
+	@Override
+	public void printInfo() {
+		System.out.println(owoce+" "+ dojrzaly+" "+odmiana);		
+	}
+	@Override
+	public void przyklad() {
+	System.out.println("z interfejsu");
 		
-		System.out.print(owoce + " "+ dojrzaly+ " " + odmiana);
 	}
-	
-	public void zmien(String zmiana){
+	public void zmien(String odmiana){
+		this.odmiana = odmiana;
 	}
-	
-	
 	public static void main(String[] args) {
-		Jablka j1 =new Jablka();
-		j1.zmien("Champion");
+		Jablka j1 = new Jablka();
+		j1.zmien("Szampion");
 		j1.printInfo();
 		j1.dojrzewanie();
 		j1.printInfo();
-		
-		
-		
+		j1.przyklad();
 
 	}
-
 }

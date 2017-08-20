@@ -31,10 +31,6 @@ public class Car {
 		public double rabat(){
 			cena= cena*0.9;
 			return cena;
-			
-			
-			
-			
 		}
 		
 		

@@ -3,19 +3,10 @@ package J63;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-/*
- * Stwórz program Gatunki w którym bêdzie utworzonych kilka obiektów typu GatunekKlasa Gatunek powinna zawieraæ:
-pola przechowuj¹ce: nazwê rodzaju
-nazwê gatunkow¹
-liczbê chromosomów
-Opis metody:
-
-podaj¹c¹ pe³n¹ nazwê (Rodzaj + gatunek)
-podaj¹c¹ liczbê chromosomów
-
-wypisuj¹c¹ wszystkie dane Gatunek o wartoœciach pól takich samych jak w
-obiekcie, w którym zosta³a wywo³ana.
-W programie powinny byæ u¿yte wszystkie metody
+/*J 63
+ *  Zmodyfikuj program Gatunki tak aby: 
+ u¿ytkownik mia³ mo¿liwoœæ wprowadzania nowych gatunków 
+ wprowadza³ dane (gatunki, ich parametry, ³¹cznie z chromosomami) 
  */
 
 public class Gatunek {

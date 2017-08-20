@@ -5,7 +5,7 @@ package Tablice;
 */
 
 
-//----------------------------------------------iloœæ powtórzeñ losowego
+//----------------------------------------------iloœæ powtórzeñ losowego------------ok
 import java.util.Random;
 
 public class J44 {

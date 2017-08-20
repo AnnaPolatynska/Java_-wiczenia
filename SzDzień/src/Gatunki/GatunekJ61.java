@@ -3,7 +3,7 @@ package Gatunki;
 
 	import java.util.ArrayList;
 
-	/*
+	/*J61
 	 * Stwórz program Gatunki w którym bêdzie utworzonych kilka obiektów typu GatunekKlasa Gatunek powinna zawieraæ:
 	pola przechowuj¹ce: nazwê rodzaju
 	nazwê gatunkow¹
@@ -31,8 +31,6 @@ package Gatunki;
 			this.liczcbaChromosomow = liczcbaChromosomow;
 			listaGatunkow.add(this);
 		}
-		
-
 		public String printRodzajGatunek() {
 			return "rodzaj: " + this.rodzaj + " gatunek: " + this.nazwaGatunku;
 		}

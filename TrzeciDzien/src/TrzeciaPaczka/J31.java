@@ -12,7 +12,8 @@ public class J31 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		// wypisuje jedynie po sobie nie podstawia i generuje b³¹d ? wzór M
+		
 			Scanner rl = new Scanner(System.in);
 			System.out.print("Podaj ci¹g znaków : ");
 			String d = rl.nextLine();
@@ -30,16 +31,7 @@ public class J31 {
 				System.out.println(i);
 			}
 			rl.close();
-		// wypisuje jedynie po sobie nie podstawia ? wzór M
-		
-		
-	
-		
-		
-		
+			
 		}
-
-		
-	
 	}
 

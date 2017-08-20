@@ -10,9 +10,6 @@ package J53;
 import java.util.ArrayList;
 // ------------po wpisaniu produktów chleb i mleko podlicza cenê za zakupy -----------reaguje na z³e nazwy 
 
-
-
-
 public class sprzedarz {
 	ArrayList<Double> lista = new ArrayList<Double>();
 	public void utarg(ArrayList<Double> lista){

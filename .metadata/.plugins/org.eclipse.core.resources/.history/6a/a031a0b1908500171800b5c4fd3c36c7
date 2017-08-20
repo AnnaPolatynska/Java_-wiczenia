@@ -1,0 +1,33 @@
+package dziedziczenie;
+
+public class GetSetPotomna extends GetSetBazowa {
+	int rok= 1900;
+	int miesiac;
+	//public GetSetpotomna(){}  zwróci 1900
+	public GetSetPotomna(String imie, int pesel) {
+		super(imie, pesel);
+		this.rok=rok;
+		this.miesiac=miesiac;
+	}
+	
+	public static void main(String[] args) {
+		//gs.1=imie ="abc"- nie widoczna z klasy potomnej bo int pesel = private
+		
+		//GetSetPotomna gs1= GetSetPotomna("Micha³", 236548874);
+		//System.out.print(gs1.getImie()+ " "+ gs1.getpesel());
+		//gs.1.setImie("Adam");
+		//gs.1.setPesel(1);
+		//System.out.print(gs1.getImie()+ " "+ gs1.getpesel());
+				
+		GetSetPotomna gs2= new GetSetPotomna("Jan", 654215745);
+		GetSetPotomna gs3= new GetSetPotomna("Micha³", 236548874);
+		System.out.print(gs2.getImie()+ " "+ gs2.getPesel()+"\n "+ gs3.getImie()+ " "+ gs3.getPesel());
+				
+				
+	}
+
+	private static GetSetPotomna GetSetPotomna(String string, int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
