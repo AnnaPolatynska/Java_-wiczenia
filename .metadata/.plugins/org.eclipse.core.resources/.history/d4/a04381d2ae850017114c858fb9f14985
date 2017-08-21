@@ -1,0 +1,18 @@
+package J72;
+/*Stwórz klasê Organizm zawieraj¹c¹ dowolne pola i metody, które mo¿na by przypisaæ wersji dowolnego organizmu. 
+ * 
+ * 
+ * 
+ * Nastêpnie stwórz klasy Bakteria , Roœlina oraz Zwierzê dziedzicz¹ce cechy po klasie Organizm ale tak¿e dostosowuj¹c je 
+ * do charakterystyki tych grup organizmów. */
+public abstract class Organizm {
+		String DNA;
+		
+		public String przypiszDna(String DNA){
+			this.DNA = DNA;
+			return DNA;
+		}
+		
+		public abstract void info();
+
+	}
