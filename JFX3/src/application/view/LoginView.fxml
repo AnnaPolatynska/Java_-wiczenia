@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <Label layoutX="56.0" layoutY="72.0" prefHeight="21.0" prefWidth="96.0" text="Login:" />
+      <Label layoutX="450.0" layoutY="235.0" prefHeight="31.0" prefWidth="87.0" text="pokaż hasło" />
+      <Label layoutX="56.0" layoutY="14.0" prefHeight="21.0" prefWidth="144.0" text="Formularz logowania" />
+      <Label layoutX="56.0" layoutY="190.0" prefHeight="21.0" prefWidth="187.0" text="podaj hasło:" />
+      <AnchorPane layoutX="56.0" layoutY="222.0" prefHeight="31.0" prefWidth="366.0">
+         <children>
+            <TextField fx:id="tf_pass" layoutX="-18.0" layoutY="-14.0" prefHeight="31.0" prefWidth="366.0" promptText="podaj hasło" visible="false" />
+            <PasswordField fx:id="pf_pass" layoutX="7.0" layoutY="2.0" prefHeight="31.0" prefWidth="366.0" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tf_login" layoutX="56.0" layoutY="119.0" prefHeight="31.0" prefWidth="366.0" promptText="podaj login" />
+      <Button fx:id="btn_login" layoutX="56.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#loginaction" prefHeight="31.0" prefWidth="366.0" text="Zaloguj" />
+      <Button fx:id="btn_show" layoutX="450.0" layoutY="266.0" mnemonicParsing="false" onMouseEntered="#showAction" onMouseExited="#hideAction" prefHeight="31.0" prefWidth="87.0" text="?" />
+   </children>
+</AnchorPane>

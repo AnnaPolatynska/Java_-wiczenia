@@ -1,0 +1,31 @@
+package Wyjatki;
+
+import java.util.Scanner;
+
+public class TabliceWyjatki {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		String[] liczby = new String [10];
+		String dec;
+		int i=0;
+		
+		while (true){
+			System.out.println("podaj element tablicy: (q) wyjœcie");
+			dec=sc.nextLine();
+			id(dec.equals("Q")){
+				System.out.println(" wyjœcie");
+				break;
+			}else{
+				liczby[i] = dec;
+				i++	//by przy kolejnym wprowadza³o do kolejnego indeksu
+			}
+			
+		}
+		sc.close();
+	}
+
+}

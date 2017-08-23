@@ -1,0 +1,18 @@
+package Wyjatki;
+/*Napisz trzy nowe wyj¹tki oraz metodê, która za ka¿dym wywo³anie bêdzie losowo zg³asza³a jeden z nich. 
+Otocz wywo³anie tej metody instrukcj¹ try-catch zawieraj¹c¹ po jednym bloku catch dla ka¿dego z wyj¹tków. 
+Niech ka¿dy blok catch wypisuje, który wyj¹tek z³apa³a. 
+*/
+public class J90 {
+
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

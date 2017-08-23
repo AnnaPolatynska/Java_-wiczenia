@@ -1,0 +1,40 @@
+package pliki;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+/*Napisz program który bêdzie pobiera³ ci¹gi znaków od u¿ytkownika i bêdzie je zapisywa³ w kolejnych liniach pliku tekstowego 
+ * dopóki u¿ytkownik nie w piszê „koniec” 
+ * Nastêpnie wyœwietl ca³y zawartoœæ pliku do którego zosta³ wpisany tekst. 
+ */
+ // ==========================================================================================================                    ?
+public class J83 {
+	public static void main(String[] arg) throws FileNotFoundException{
+		File plik = new File("J83");
+		Scanner odczyt = new Scanner(System.in);
+		
+		PrintWriter zapis = new PrintWriter("J83.txt");
+		zapis.println("  ");
+		String end = "";
+		
+		System.out.println("wypisz kolejne linie do pliku: ");
+		//equals gdy ma wpisaæ sam "koniec" a contains gdy w tekœcie wpisywanym wyst¹pi s³owo koniec
+		while (!end.toLowerCase().equals("koniec")){
+			end=odczyt.nextLine();
+			if(!end.toLowerCase().equals("koniec")){
+				zapis.println(end);
+			}
+		}
+		zapis.close();
+	
+		//odczyt
+		
+		Scanner odczyt2 = new Scanner("J83.txt");
+		while (odczyt2.hasNextLine()){
+			System.out.println(odczyt2.nextLine());
+		}
+			odczyt.close();
+			odczyt2.close();
+		}
+}

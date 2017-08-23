@@ -1,0 +1,52 @@
+package application.controller;
+
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+
+public class LoginController {
+
+    @FXML
+    private PasswordField pf_pass;
+
+    @FXML
+    private TextField tf_pass;
+
+    @FXML
+    private TextField tf_login;
+
+    @FXML
+    private Button btn_login;
+
+    @FXML
+    private Button btn_show;
+
+    @FXML
+    void loginaction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void showAction(MouseEvent event) {
+    	pf_pass.setVisible(false);
+    	tf_pass.setVisible(true);
+    	String pass = pf_pass.getText();
+    	
+    	//przypisanie zawartoœci do tekst fieldu
+    	tf_pass.setText(pass);// robi kropki
+    	//pf_pass.setText("");
+    	
+    }
+    @FXML
+    void hideAction(MouseEvent event) {
+    	pf_pass.setVisible(true);
+    	tf_pass.setVisible(false);
+    	String pass = pf_pass.getText();// z text fielda zbieram tekst i wpisujê w pf_pass
+    	tf_pass.setText(pass);
+    	
+    }
+
+}

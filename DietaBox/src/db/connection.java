@@ -37,7 +37,7 @@ public class connection {
 			connection bo = new connection();
 			bo.polaczenie();
 			bo.wypisz();
-			bo.wpisz("id_k, nazwisko, imiê, telefon, miasto, id_o","11,'Miko³ajski','Krzysztof','609-280-280','Warszawa',2");
+			bo.wpisz("id_k, nazwisko, imiê, telefon, miasto, id_o","11,'Miko³ajski','Artur','609-289-280','Piastów',2");
 			bo.wypisz();
 			bo.zamknij();
 			

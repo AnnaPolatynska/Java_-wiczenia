@@ -1,0 +1,75 @@
+
+	package application.controller;
+
+
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
+
+public class EditorController {
+
+    @FXML
+    private MenuItem MI_zapisz;
+
+    @FXML
+    private MenuItem MI_zamknij;
+
+    @FXML
+    private TextArea ta_name;
+
+    @FXML
+    private TextArea Ta_main;
+
+    @FXML
+    private Button Btn_UppCase;
+
+    @FXML
+    private Button Btn_LowCase;
+
+    @FXML
+    private Button Btn_Clear;
+
+    @FXML
+    void clear(MouseEvent event) {
+    	Btn_Clear.setText("");
+    }
+
+    @FXML
+    void close(ActionEvent event) {
+    	System.exit(0);
+    }
+
+    @FXML
+    void lowwerCase(MouseEvent event) {
+    	String text =ta_name.getText();
+    	text = text.toLowerCase();
+    	ta_name.setText(text);
+    	
+    	String text1 =Ta_main.getText();
+    	text1 = text1.toLowerCase();
+    	Ta_main.setText(text1);
+    	
+    }
+
+    @FXML
+    void saveApp(ActionEvent event) {
+
+    }
+
+    @FXML
+    void upperCase(MouseEvent event) {
+    	String text = ta_name.getText();
+    	text = text.toUpperCase();
+    	ta_name.setText(text);
+    	
+    	String text1 = Ta_main.getText();
+    	text1 = text1.toUpperCase();
+    	Ta_main.setText(text1);
+    	
+    }
+
+}

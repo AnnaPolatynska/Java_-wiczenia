@@ -1,0 +1,42 @@
+package Wyjatki;
+
+import java.util.Scanner;
+
+// J95
+// Napisz program kalkulator który reaguje na wyj¹tki i prosi o poprawienie wpisu. 
+public class J95 {
+	
+	public static void main(String[] args) {
+		
+		Scanner odczytA= new Scanner(System.in);
+		double A = odczytA.nextDouble();
+		
+		Scanner odczytB= new Scanner(System.in);
+		double B = odczytB.nextDouble();
+		
+		
+		
+		
+		System.out.println("Podaj liczbê A: ");
+		
+		System.out.println("Podaj liczbê B: ");
+		double suma=A+B;
+		double roznica=A-B;
+		double mnozenie= A*B;
+		double dzielenie = A/B;
+		
+		System.out.println( "suma liczb A i B to: " + suma);
+		
+		System.out.println( "ró¿nica liczb A i B to: " + roznica);
+		
+		System.out.println( "mno¿enie liczb A i B to: " + mnozenie);
+		
+		System.out.println( "dzielenie liczby A przez B to: " + dzielenie);
+		
+		
+		odczytA.close();
+		odczytB.close();
+		
+	}
+	
+}

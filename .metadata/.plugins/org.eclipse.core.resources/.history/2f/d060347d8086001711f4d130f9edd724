@@ -1,0 +1,56 @@
+package Wyjatki;
+
+import java.util.Scanner;
+
+/*Napisz program który zbiera informacje o u¿ytkownikach imiê, nazwisko, wiek. Je¿eli któraœ z wartoœci jest b³êdna nale¿y zwróciæ wyj¹tek o 
+ * tym ¿e wartoœæ jest b³êdna. Np.. puste imiê itd.. 
+ * Nastêpnie po wyœwietleniu komunikatu wyj¹tku nale¿y ponowiæ próbê pozyskania danej która by³a b³êdna. 
+ * Na koniec wszystkie dane o wpisanych u¿ytkownikach trzeba zapisaæ do pliku. I wyœwietliæ zawartoœæ pliku. 
+ */
+public class J94 {
+
+	J94(){
+		
+	}
+	
+	public void odczytString(String nazwaDanej){
+		System.out.println(" ");
+		String dane= sc.nextline();
+	}
+	
+	public void odczytInt(int nazwaDanej){
+		System.out.println(" ");
+	}
+	//nullPointer nie stwierdzi czy to string bo widzi jako string o 0 znaków, muszisz po d³ugoœci
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Podaj imie: ");
+		try{
+			
+		
+		String imie_sc= sc.nextLine();
+		}catch (nullPointer)
+		
+		System.out.println("Podaj nazwisko: ");
+		String nazwisko_sc= sc.nextLine();
+		
+		System.out.println("Podaj wiek: ");
+		try{
+		int wiek_sc= sc.nextInt();
+		}catch (InputMismatchException e){
+			System.out.println("wiek musi byæ liczb¹");
+		}
+		
+		
+		
+		
+		sc.close();
+		
+		
+		
+		
+	}
+
+}

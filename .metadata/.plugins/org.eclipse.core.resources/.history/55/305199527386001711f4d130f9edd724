@@ -1,0 +1,18 @@
+package Wyjatki;
+/*Napisz program pobieraj¹cy od u¿ytkownika liczbê. 
+ * Je¿eli u¿ytkownik wpisze znak w miejsce liczby program powinien obd³u¿yæ wyj¹tek i wykonaæ siê ponownie oraz poprosiæ 
+ * o poprawne wpisanie wartoœci.  
+*/
+public class J91 {
+
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

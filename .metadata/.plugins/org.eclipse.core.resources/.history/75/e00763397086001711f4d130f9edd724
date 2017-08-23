@@ -1,0 +1,38 @@
+package Wyjatki;
+
+import java.util.Random;
+
+/*Napisz trzy nowe wyj¹tki oraz metodê, która za ka¿dym wywo³anie bêdzie losowo zg³asza³a jeden z nich. 
+Otocz wywo³anie tej metody instrukcj¹ try-catch zawieraj¹c¹ po jednym bloku catch dla ka¿dego z wyj¹tków. 
+Niech ka¿dy blok catch wypisuje, który wyj¹tek z³apa³a. 
+*/
+public class J90 {
+
+	private class MyException1 extends Exception{}
+	private class MyException2 extends Exception{}
+	private class MyException3 extends Exception{}
+	
+	public static void losuj() throws MyException1, MyException2, MyException3{
+		Random r= new Random();
+		switch(r.nextInt(3)){	//chcê wylosowaæ 1 z 3 opcji
+		case 0:
+			throw new MyException1();
+			// wywo³anie konstruktora klasy MyException1
+			
+		case 1:
+			throw new MyException2();
+		case 2:
+			throw new MyException3();
+			
+		}
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

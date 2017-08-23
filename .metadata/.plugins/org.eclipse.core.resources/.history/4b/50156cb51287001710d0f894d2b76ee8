@@ -1,0 +1,15 @@
+package Wyjatki;
+
+import java.util.Scanner;
+
+public class J95Wyjatki {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner.sc = new Scanner();
+		
+		System.out.print(co chcesz zrobiæ:);
+	}
+
+}

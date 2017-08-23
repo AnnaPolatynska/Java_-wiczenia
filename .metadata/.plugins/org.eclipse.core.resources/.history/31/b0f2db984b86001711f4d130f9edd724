@@ -1,0 +1,27 @@
+package pliki;
+import java.io.File;
+/*Stwórz klasê Book, która bêdzie mia³a pola nazwa, autor, rokWydania. 
+Odczytaj z pliku dane nazwa, autor, rokWydania które bêd¹ przedzielone przecinkiem i stwórz obiekty klasy Book na podstawie danych odczytanych z pliku.  
+Nastêpnie wypisz dane wszystkich stworzonych obiektów typu Book.  
+*/
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class J82BookTestowa {
+	public static void main(String[] arg) throws FileNotFoundException{
+		
+		File myBook = new File("J82.txt");
+		Scanner odczyt = new Scanner(myBook);
+		// tworzy wzorzec = przycina po autorze, roku wydania itd i wstawia przecinek
+		odczyt.useDelimiter(", ");
+		while(odczyt.hasNextLine()){
+			String odczytNazwa = odczyt.next();
+			String odczytAutor = odczyt.next();
+			String odczytRok = odczyt.next();
+			
+			J82Book nextBook = new J82Book(odczytNazwa, odczytAutor,odczytRok );
+		}
+		
+		odczyt.close();
+	}
+}

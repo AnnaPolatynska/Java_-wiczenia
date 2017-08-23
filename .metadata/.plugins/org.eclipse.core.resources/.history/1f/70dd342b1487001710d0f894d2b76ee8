@@ -1,0 +1,36 @@
+package Wyjatki;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class J95Wyjatki {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner dec = new Scanner(System.in);
+		String decyzja;
+		boolean c;
+					
+			System.out.print("co chcesz zrobiæ: (+), (-), (*), (/), Q ?");
+			decyzja = dec.nextLine();
+			try{
+				if(!(decyzja.equals("+")||decyzja.equals("-")||decyzja.equals("*")||decyzja.equals("/")||decyzja.equals("Q"))
+					catch(InputMismatchException e){
+						System.out.println("z³y znak");
+						dec.nextLine();
+				}
+		
+				try{
+					int getA(A)= sc.nextDouble();
+											
+					}catch (InputMismatchException e){
+						System.out.println("A musi byæ liczb¹");
+						dec.nextLine();
+					}
+			}
+		
+		dec.close();
+	}
+
+}

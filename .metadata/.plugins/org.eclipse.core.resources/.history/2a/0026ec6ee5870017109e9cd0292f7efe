@@ -1,0 +1,100 @@
+
+	package application.controller;
+
+
+
+import java.awt.Frame;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
+
+public class EditorController {
+
+    @FXML
+    private MenuItem MI_zapisz;
+
+    @FXML
+    private MenuItem MI_zamknij;
+
+    @FXML
+    private TextArea ta_name;
+
+    @FXML
+    private TextArea Ta_main;
+
+    @FXML
+    private Button Btn_UppCase;
+
+    @FXML
+    private Button Btn_LowCase;
+
+    @FXML
+    private Button Btn_Clear;
+
+    @FXML
+    void clear(MouseEvent event) {
+    	Ta_main.setText("");
+    }
+
+    @FXML
+    void close(ActionEvent event) {
+    	System.exit(0);
+    }
+
+    @FXML
+    void lowwerCase(MouseEvent event) {
+    	    	
+    	String text =Ta_main.getText();
+    	text = text.toLowerCase();
+    	Ta_main.setText(text);
+    	
+    }
+
+    @FXML
+    void saveApp(ActionEvent event) throws FileNotFoundException {
+    	// nowe okno poza scene bilderem 
+    	Frame df=new Frame();
+    	JOptionPane op= new JOptionPane();
+    	
+    	if(Ta_main.getText().equals("")){
+    		op.showMessageDialog(ta_name, "Musisz podaæ nazwê pliku");
+    	}else{
+    		//zapis do pliku
+        	File f = new File("C:\\Users\\Ania\\Desktop\\BED_Æwiczenia\\"+ta_name.getText()+".txt");
+        	PrintWriter pw = new PrintWriter(f);
+    		Scanner sc = new Scanner(Ta_main.getText());
+    		    		
+    		while(sc.hasNextLine()){
+    			String line = sc.nextLine();
+    			pw.println(line);
+    		}
+    	
+     	// C:\Users\Ania\Desktop\BED_Æwiczenia\f.txt
+    		op.showMessageDialog(df, "Zapisano!");// nowe okno poza scene bilderem 
+    		Ta_main.setText("");
+    		ta_name.setText("");
+    		pw.close();
+    		sc.close();
+    	}
+    }
+
+    @FXML
+    void upperCase(MouseEvent event) {
+    	    	
+    	String text = Ta_main.getText();
+    	text = text.toUpperCase();
+    	Ta_main.setText(text);
+    	
+    }
+
+}

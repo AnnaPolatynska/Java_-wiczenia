@@ -1,0 +1,41 @@
+package pliki;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class J81 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		//odczyt
+		File plik = new File("C:\\Users\\Ania\\Desktop\\J81.txt"); //plik skopiowany na pulpit ! wstaw 2\\
+		Scanner odczyt = new Scanner(plik);
+				
+		//pêtla umo¿liwia odczyt ci¹³y hasNextLine je¿eli nie spe³ni boolina to wywala z pêtli+ .charAt-czy zawiera + .contain()czy zawiera podci¹g wci¹gu
+		while(odczyt.hasNextLine()){
+			//LC= lower case
+			String line = odczyt.nextLine();
+			String LC= line.toLowerCase();
+			
+			int licznikA=0;
+			int licznikO=0;
+			
+			for(int i=0; i< LC.length(); i++){
+				if(LC.charAt(i)=='a'){
+					licznikA++;
+									}
+				if(LC.charAt(i)=='o'){
+					licznikO++;
+									}
+			}
+			if(licznikA>=3 && licznikO>=2 || (LC.contains("allow"))){
+				System.out.println(line);
+			}
+		}	
+		odczyt.close();
+			
+	}
+
+}

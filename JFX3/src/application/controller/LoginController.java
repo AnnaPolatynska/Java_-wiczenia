@@ -1,0 +1,90 @@
+package application.controller;
+
+
+import java.io.IOException;
+
+import javax.imageio.IIOException;
+
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+public class LoginController {
+
+    private static final AlertType Warning = null;
+
+	@FXML
+    private PasswordField pf_pass;
+
+    @FXML
+    private TextField tf_pass;
+
+    @FXML
+    private TextField tf_login;
+
+    @FXML
+    private Button btn_login;
+
+    @FXML
+    private Button btn_show;
+
+    @FXML
+    void loginaction(MouseEvent event) throws IOException {
+    	if(((tf_login.getText().equals("admin") && tf_pass.getText().equals("admin")) || (tf_login.getText().equals("admin") && pf_pass.getText().equals("admin")))){
+    		System.out.println("poprawnie");
+    		Stage StageInfo=new Stage();
+    		//przeklejone z main*******
+        	Parent parent = (Parent) FXMLLoader.load(getClass().getResource("/application/view/InfoView.fxml")); //œcie¿ka dostêpu
+    		Scene sceneInfo = new Scene (parent);
+    		StageInfo.setScene(sceneInfo);
+    		StageInfo.setTitle("Info");// nazwa okna
+    		StageInfo.show();
+    		///****
+    	}else{
+    		//klasa allert z javafx
+    		Alert a = new Alert(AlertType.INFORMATION);//okno z informacj¹ o b³êdzie
+    		a.setContentText("Podaleœ b³êdne has³o lub b³êdny login");
+    		a.setTitle("B³¹d");
+    		//metoda 
+    		a.showAndWait();
+    		
+    	}
+    }
+
+    @FXML
+    void showAction(MouseEvent event) {
+    	pf_pass.setVisible(false);
+    	tf_pass.setVisible(true);
+    	String pass = pf_pass.getText();
+    	
+    	//przypisanie zawartoœci do tekst fieldu
+    	tf_pass.setText(pass);// robi kropki
+    	pf_pass.setText(""); //kasuje has³o
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    }
+    @FXML
+    void hideAction(MouseEvent event) {
+    	pf_pass.setVisible(true);
+    	tf_pass.setVisible(false);
+    	String pass = tf_pass.getText();// z text fielda zbieram tekst i wpisujê w pf_pass
+    	pf_pass.setText(pass);
+    	tf_pass.setText("");
+    }
+
+}
